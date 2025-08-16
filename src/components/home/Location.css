@@ -1,0 +1,53 @@
+.location-section {
+  padding: 4rem 0;
+  background-color: var(--background-light);
+}
+
+.map-container {
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.location-info {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.location-title {
+  color: var(--primary-color);
+  margin-bottom: 1rem !important;
+}
+
+.location-description {
+  margin-bottom: 1rem !important;
+  color: var(--text-color);
+}
+
+.location-details {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.location-details li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #666;
+}
+
+.location-details li:before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+.parking-info {
+  margin-top: 1rem !important;
+  color: #666;
+  font-style: italic;
+}

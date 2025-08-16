@@ -1,0 +1,42 @@
+.faq-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+.faq-question {
+  font-size: 1.1rem !important;
+  color: var(--text-color);
+}
+
+.faq-answer {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Material-UI Accordion customization */
+.MuiAccordion-root {
+  margin-bottom: 1rem !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.MuiAccordion-root:before {
+  display: none;
+}
+
+.MuiAccordionSummary-root {
+  padding: 1rem 1.5rem !important;
+}
+
+.MuiAccordionSummary-root.Mui-expanded {
+  background-color: rgba(33, 150, 243, 0.05);
+}
+
+.MuiAccordionDetails-root {
+  padding: 1rem 1.5rem 1.5rem !important;
+}

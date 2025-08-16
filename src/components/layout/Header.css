@@ -1,0 +1,128 @@
+.header {
+  background-color: transparent !important;
+  transition: all 0.3s ease !important;
+}
+
+.header.scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+[data-theme="dark"] .header.scrolled {
+  background-color: rgba(18, 18, 18, 0.85) !important;
+}
+
+.logo-container {
+  padding: 0.5rem 0;
+  flex-grow: 0;
+}
+
+.logo {
+  height: 50px;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+.desktop-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header .MuiButton-root {
+  color: #2196f3 !important;
+  font-weight: 500;
+}
+
+.header .MuiIconButton-root {
+  color: #2196f3 !important;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem !important;
+  color: #2196f3 !important;
+  font-weight: 500 !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #2196f3;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+.mobile-menu {
+  width: 250px;
+}
+
+[data-theme="dark"] .mobile-menu {
+  background-color: #1e1e1e;
+}
+
+.menu-button {
+  margin-left: 1rem !important;
+}
+
+/* Drawer customization */
+.MuiDrawer-paper {
+  padding: 1rem;
+}
+
+[data-theme="dark"] .MuiDrawer-paper {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.MuiListItem-root {
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+.MuiListItem-root.Mui-selected {
+  background-color: rgba(33, 150, 243, 0.1) !important;
+}
+
+[data-theme="dark"] .MuiListItem-root.Mui-selected {
+  background-color: rgba(33, 150, 243, 0.2) !important;
+}
+
+/* Transition animations */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms, transform 300ms;
+}

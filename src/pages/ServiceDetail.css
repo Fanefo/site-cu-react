@@ -1,0 +1,104 @@
+.service-detail-page {
+  padding: 6rem 0 4rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.back-button {
+  margin-bottom: 2rem !important;
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  transition: all 0.3s ease !important;
+}
+
+.back-button:hover {
+  background-color: rgba(33, 150, 243, 0.1) !important;
+  transform: translateX(-5px);
+}
+
+.page-title {
+  margin-bottom: 2rem !important;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 2.5rem !important;
+}
+
+.detail-section {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.section-title {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem !important;
+  font-size: 1.5rem !important;
+}
+
+.description {
+  line-height: 1.8;
+  color: #666;
+}
+
+.benefits-list,
+.indications-list,
+.process-list {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.benefits-list li,
+.indications-list li,
+.process-list li {
+  margin-bottom: 0.5rem;
+  color: #666;
+  line-height: 1.6;
+  transition: transform 0.3s ease;
+}
+
+.benefits-list li:hover,
+.indications-list li:hover,
+.process-list li:hover {
+  transform: translateX(5px);
+  color: var(--text-color);
+}
+
+.process-list {
+  counter-reset: step-counter;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.process-list li {
+  counter-increment: step-counter;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.process-list li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.process-list li:hover::before {
+  transform: scale(1.1);
+  background-color: var(--secondary-color);
+}
